@@ -1,0 +1,16 @@
+#pragma once
+#include <stdlib.h>
+
+namespace erpc {
+
+// Pick a transport. This is hard to control from CMake.
+class IBTransport;
+class RawTransport;
+class DpdkTransport;
+class FakeTransport;
+
+#define CTransport ${CONFIG_TRANSPORT}
+static constexpr size_t kHeadroom = ${CONFIG_HEADROOM};
+static constexpr size_t kIsRoCE = ${CONFIG_IS_ROCE};
+static constexpr size_t kIsAzure = ${CONFIG_IS_AZURE};
+}  // namespace erpc

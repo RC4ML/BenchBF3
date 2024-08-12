@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  doca-dev:
+    image: doca-dev
+    container_name: doca-dev
+    privileged: true
+    restart: unless-stopped
+    network_mode: "host"
+    ulimits:
+      memlock: -1
+    devices:
+      - /dev:/dev
+    ports:
+      - "2222:22"
+    volumes:
+      - ./:/root/dev
+      - /dev:/dev

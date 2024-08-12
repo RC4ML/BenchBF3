@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package dma_connect;
+
+option optimize_for = LITE_RUNTIME;
+
+message doca_conn_info {
+
+    repeated bytes  exports = 1;
+    repeated uint64  buffers_ptr = 2;
+    repeated uint64  buffers_size = 3;
+}

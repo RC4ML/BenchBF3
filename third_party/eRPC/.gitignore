@@ -1,0 +1,79 @@
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+main
+tags
+1
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+
+# Apt NFS files
+.nfs000*
+
+# CMake
+build
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+Testing
+*.cmake
+.ninja_deps
+.ninja_log
+build.ninja
+
+# gdb
+.gdb_history
+
+# Mac
+.DS_Store
+
+# Doxygen
+html
+latex
+
+# Common temp files
+ibnet_out
+sweep_out
+scripts/autorun_process_file
+scripts/autorun_app_file
+gdb_history
+*.swp
+src/config.h
+.ycm_extra_conf.py
+
+# Third-party downloads
+third_party
+
+# vscode
+.clang_complete
+.cache
+compile_commands.json
+.vscode/
