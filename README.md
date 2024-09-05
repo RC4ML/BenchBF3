@@ -23,7 +23,7 @@ All benchmarks require
 
 ## DPU Mode / NIC Mode
 
-**Due to DOCA driver limitation, DPA can only access Arm memory under DPU mode, and access host memory under NIC mode. So please change to correct mode before benchmark.** Here is a sample for change mode:
+**Due to DOCA driver limitation(DOCA 2.8.0), DPA can only invoke from Arm/access Arm memory under DPU mode, and invoke from host/access host memory under NIC mode.** So please change to the correct mode before benchmark. Here is a sample for change mode:
 
 ```bash
 # To NIC MODE
