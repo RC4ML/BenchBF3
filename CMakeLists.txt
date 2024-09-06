@@ -177,7 +177,6 @@ else ()
     message(SATTUS "No ${APP} found. No application will be compiled.")
 endif ()
 
-add_subdirectory(${CMAKE_SOURCE_DIR}/flexio/dpa_refactor_mt)
 add_subdirectory(${CMAKE_SOURCE_DIR}/flexio/dpa_send_mt)
 add_subdirectory(${CMAKE_SOURCE_DIR}/flexio/dpa_send_ntp)
 add_subdirectory(${CMAKE_SOURCE_DIR}/flexio/dpa_send)

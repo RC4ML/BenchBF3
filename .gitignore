@@ -30,7 +30,7 @@
 *.exe
 *.out
 *.app
-/build*
+/build
 /clang-target
 /build_host
 /build_dpu
