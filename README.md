@@ -21,6 +21,13 @@ All benchmarks require
 - isolation cpu for test (add isolcpus=0-11 nohz_full=0-11 to /etc/default/grub and reboot)
 - disable PFC
 
+## Install Dependencies
+
+~~~bash
+sudo apt-get install -y --no-install-recommends libgflags-dev libz-dev liblz4-dev 
+wget https://github.com/protocolbuffers/protobuf/releases/download/v3.20.3/protobuf-cpp-3.20.3.zip && unzip protobuf-cpp-3.20.3.zip && cd protobuf-3.20.3 && ./configure && make -j&& sudo make install && sudo ldconfig
+~~~
+
 ## DPU Mode / NIC Mode
 
 **Due to DOCA driver limitation(DOCA 2.8.0), DPA can only invoke from Arm/access Arm memory under DPU mode, and invoke from host/access host memory under NIC mode.** So please change to the correct mode before benchmark. Here is a sample for change mode:
